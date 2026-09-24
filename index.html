@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Horizonte</title>
+    <meta name="author" content="Nicolas Perinetti">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="barra-navegacion">
+        <div class="logotipo">
+            <img src="static/images/istockphoto-1620759890-612x612.png" alt="Logo Libro">
+            <h1><span class="tamano">Biblioteca </span><br><span class="azul">Horizonte</span></h1>
+        </div>
+        <div class="nav">
+            <input type="text" class="barra-busqueda" id="inputEmail" placeholder="Email">
+            <button class="btn-like" id="btnLogin">Ingresar</button>
+            <div class="carrito-contenedor">
+                <img src="static/images/carrito.png" alt="Carrito" class="icono-carrito">
+                <p>Libros 
+                    <br>
+                seleccionados <span class="contador-carrito" id="contador1">0</span>
+            </p>
+                
+            </div>
+        </div>
+    </header>
+    <section class="seccion-categorias">
+        <div class="item-categoria">
+            <img src="static/images/istockphoto-1620759890-612x612.png" alt="Novela">
+            <p>Novelas</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/tacos.jpg" alt="Tacos">
+            <p>Ciencia</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/flautas.jpg" alt="Flautas">
+            <p>Historia</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/gorditas.jpg" alt="Gorditas">
+            <p>Tecnologia</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/tostadas.jpg" alt="Tostadas">
+            <p>Arte</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
+            <p>Infantil</p>
+        </div>
+    </section>
+    <main class="contenedor-principal">
+        <section class="columna-izquierda">
+            <div class="banner-promo">
+                <div class="texto-promo">
+                    <h2><strong>Descubre <br> nuevas historias</strong></h2>
+                    <div class="barra"></div>
+                    <p>Explora nuestra biblioteca virtual <br>y encuentra libros para todos <br>los gustos. Conocimientos, <br>aventura y mucho mas al <br>alcance de un clic</p>
+                </div>
+                <div class="imagen-promo">
+                    <img src="static/images/comida-mexicana.jpg" id="comida" alt="Comida Mexicana">
+                    <p>Conoce la Biblioteca Horizonte</p>
+                </div>
+            </div>
+        </section>
+        <section class="columna-derecha">
+            <h2 class="titulo-seccion">Libros recomendados:</h2>
+            <div class="tarjeta-recomendado">
+                <img src="static/images/orden-tacos.jpg" alt="Orden de Tacos" class="imagen-platillo">
+                <div class="pie-tarjeta">
+                    <div>
+                        <p class="nombre-platillo">Cien años de soledad</p>
+                        <a href="#" class="enlace-mas">Ver Más...</a>
+                    </div>
+                    <button class="btn-agregar" id="cienañosdesoledad">+</button>
+                </div>
+            </div>
+            <div class="tarjeta-recomendado">
+                <img src="static/images/orden-flautas.jpg" alt="Orden de Flautas" class="imagen-platillo">
+                <div class="pie-tarjeta">
+                    <div>
+                        <p class="nombre-platillo">Sapiens</p>
+                        <a href="#" class="enlace-mas">Ver Más...</a>
+                    </div>
+                    <button class="btn-agregar" id="sapiens">+</button>
+                </div>
+            </div>
+            <div class="tarjeta-recomendado">
+                <img src="static/images/orden-flautas.jpg" alt="Orden de Flautas" class="imagen-platillo">
+                <div class="pie-tarjeta">
+                    <div>
+                        <p class="nombre-platillo">El principito</p>
+                        <a href="#" class="enlace-mas">Ver Más...</a>
+                    </div>
+                    <button class="btn-agregar" id="elprincipito">+</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
