@@ -2,20 +2,21 @@ console.log("Conexion correcta")
 
 // sirve cambiar la portada del video a otra
 
-const video1 = document.getElementById("comida");
-
+const video1 = document.getElementById("video");
 
 if (video1) {
     video1.addEventListener("mouseover", function () {
-        video1.src = "static/images/comida-mexicana2.jpg";
+        // Cambia la portada al pasar el mouse
+        video1.poster = "static/images/images(5).png";
     });
 
     video1.addEventListener("mouseout", function () {
-        video1.src = "static/images/comida-mexicana.jpg";
+        // Vuelve a la portada original
+        video1.poster = "static/video/¿qué_es_una_biblioteca_.mp4";
     });
 }
 
-// sirve para añadir una cosa a los libros seleccionados
+// sirve para añadir un libro al contador
 
 let boton1 = document.querySelector("#cienañosdesoledad");
 let contador1 = document.querySelector("#contador1");

@@ -9,6 +9,8 @@ body {
    background-color: white;
 }
 
+/* Barra principal superior*/
+
 .barra-navegacion {
    display: flex;
    justify-content: space-between;
@@ -21,7 +23,7 @@ body {
 .logotipo {
    display: flex;
    align-items: center;
-   gap: 10px;
+   gap: 20px;
    font-size: 1.2rem;
    font-weight: 700;
 }
@@ -29,6 +31,7 @@ body {
 .logotipo img {
    height: 100px;
    width: auto;
+   margin-left: 20px;
 }
 
 .azul {
@@ -69,7 +72,7 @@ body {
    margin-left: 10px;
 }
 
-.icono-carrito {
+.iconoLibros {
    height: 18px;
    margin-right: 10px;
    width: auto;
@@ -93,12 +96,15 @@ body {
 
 .item-categoria {
    text-align: center;
+   background-color: white;
+   width: 150px;
 }
 
 .item-categoria img {
    width: 110px;
    height: 80px;
    border-radius: 4px;
+   object-fit: cover;
 }
 
 .item-categoria p {
@@ -166,11 +172,12 @@ body {
    border-radius: 4px;
 }
 
+/* Toda la columna derecha*/
+
 .columna-derecha {
    flex: 1;
    display: flex;
    flex-direction: column;
-   gap: 15px;
 }
 
 .titulo-seccion {
@@ -182,19 +189,18 @@ body {
 
 .tarjeta-recomendado {
    background-color: white;
-   border: 1px solid #e2e8f0;
+   border: 1px solid rgb(214, 212, 212);
    border-radius: 4px;
    padding: 12px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
    gap: 12px;
    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .imagen-libro {
    width: 70px;
-   height: 70px;
+   height: 80px;
    object-fit: cover;
    border: 1px solid #ccc;
    border-radius: 3px;
@@ -226,6 +232,8 @@ body {
    margin-top: 4px;
 }
 
+/* diseño del boton mas un hover*/
+
 .btn-agregar {
    width: 32px;
    height: 32px;
@@ -247,6 +255,8 @@ body {
    background-color: #295EA4;
 }
 
+/* Linea azul*/
+
 .barra {
    border-bottom: 5px solid #164E9C;
    padding-bottom: 0.1rem;
@@ -255,6 +265,7 @@ body {
 }
 
 /* Video */
+
 .video-responsive {
    width: 500px;
    height: 300px;
