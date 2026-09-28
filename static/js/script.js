@@ -1,17 +1,21 @@
 console.log("Conexion correcta")
 
-const comida1 = document.getElementById("comida");
+// sirve cambiar la portada del video a otra
+
+const video1 = document.getElementById("comida");
 
 
-if (comida1) {
-    comida1.addEventListener("mouseover", function () {
-        comida1.src = "static/images/comida-mexicana2.jpg";
+if (video1) {
+    video1.addEventListener("mouseover", function () {
+        video1.src = "static/images/comida-mexicana2.jpg";
     });
 
-    comida1.addEventListener("mouseout", function () {
-        comida1.src = "static/images/comida-mexicana.jpg";
+    video1.addEventListener("mouseout", function () {
+        video1.src = "static/images/comida-mexicana.jpg";
     });
 }
+
+// sirve para añadir una cosa a los libros seleccionados
 
 let boton1 = document.querySelector("#cienañosdesoledad");
 let contador1 = document.querySelector("#contador1");
@@ -39,6 +43,8 @@ boton3.onclick = function () {
     cantidad++;
     contador3.innerText = cantidad + 0;
 };
+
+// cuando coloque un correo mandara un mensaje diciendo bienvenido
 
 const btnLogin = document.getElementById('btnLogin');
 const inputEmail = document.getElementById('inputEmail');
